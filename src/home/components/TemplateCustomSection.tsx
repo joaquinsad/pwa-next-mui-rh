@@ -17,6 +17,7 @@ const TemplateCustomSection = () => {
             alt="Demo de una web dedicada a la indumentaria"
             height={1200}
             width={800}
+            layout="responsive"
           />
         </Grid>
         <Grid item xs={12} md={4}>
@@ -25,6 +26,7 @@ const TemplateCustomSection = () => {
             alt="Demo de una web dedicada a la indumentaria"
             height={1200}
             width={800}
+            layout="responsive"
           />
         </Grid>
         <Grid item xs={12} md={4}>
@@ -33,6 +35,7 @@ const TemplateCustomSection = () => {
             alt="Demo de una web dedicada a la indumentaria"
             height={1200}
             width={800}
+            layout="responsive"
           />
         </Grid>
       </Grid>

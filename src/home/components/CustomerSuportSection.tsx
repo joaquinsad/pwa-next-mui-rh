@@ -15,6 +15,7 @@ const CustomerSuportSection = () => {
         alt="Demo de una web dedicada a la indumentaria"
         height={800}
         width={1200}
+        layout="responsive"
       />
     </CardSection>
   );
