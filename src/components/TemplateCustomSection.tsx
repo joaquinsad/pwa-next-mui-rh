@@ -3,6 +3,12 @@ import React from "react";
 import CardSection from "./CardSection";
 import Image from "next/image";
 
+const templates: string[] = [
+  "https://picsum.photos/800/1200",
+  "https://picsum.photos/800/1200",
+  "https://picsum.photos/800/1200",
+];
+
 const TemplateCustomSection = () => {
   return (
     <CardSection
@@ -10,34 +16,25 @@ const TemplateCustomSection = () => {
       subtitle="Plantillas creadas para satisfacer tus necesidades. Elige una plantilla y edita cualquier cosa: cambia colores, fuentes, imágenes y más. No se necesitan habilidades de codificación."
       justContent
     >
-      <Grid container spacing={2}>
-        <Grid item xs={12} md={4}>
-          <Image
-            src="https://picsum.photos/800/1200"
-            alt="Demo de una web dedicada a la indumentaria"
-            height={1200}
-            width={800}
-            layout="responsive"
-          />
-        </Grid>
-        <Grid item xs={12} md={4}>
-          <Image
-            src="https://picsum.photos/800/1200"
-            alt="Demo de una web dedicada a la indumentaria"
-            height={1200}
-            width={800}
-            layout="responsive"
-          />
-        </Grid>
-        <Grid item xs={12} md={4}>
-          <Image
-            src="https://picsum.photos/800/1200"
-            alt="Demo de una web dedicada a la indumentaria"
-            height={1200}
-            width={800}
-            layout="responsive"
-          />
-        </Grid>
+      <Grid container spacing={2} height={400}>
+        {templates.map((template, index) => (
+          <Grid
+            item
+            xs={12}
+            sm={4}
+            key={index}
+            sx={{
+              position: "relative",
+              height: "100%",
+            }}
+          >
+            <Image
+              src={template}
+              alt="Demo de una web dedicada a la indumentaria"
+              fill
+            />
+          </Grid>
+        ))}
       </Grid>
     </CardSection>
   );

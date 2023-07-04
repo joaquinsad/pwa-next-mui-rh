@@ -66,7 +66,14 @@ const CardSection = ({
             </Button>
           )}
         </Box>
-        <Box gridArea={"children"} alignSelf="center">
+        <Box
+          gridArea={"children"}
+          alignSelf="center"
+          sx={{
+            position: "relative",
+            height: "100%",
+          }}
+        >
           {children}
         </Box>
       </Box>
