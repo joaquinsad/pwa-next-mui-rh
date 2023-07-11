@@ -2,7 +2,7 @@ import { Box } from "@mui/material";
 import React from "react";
 
 const Footer = () => {
-  return <Box height={"8vh"} />;
+  return <Box />;
 };
 
 export default Footer;
