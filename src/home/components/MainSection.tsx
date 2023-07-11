@@ -34,8 +34,7 @@ const MainSection = () => {
           sm: 2,
         }}
         height={{
-          xs: "100vh",
-          md: "92vh",
+          xs: "92vh",
         }}
       >
         <Box

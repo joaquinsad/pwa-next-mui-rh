@@ -5,7 +5,7 @@ const Plans = () => {
   return (
     <>
       <Container
-        sx={{ mt: "16vh" }}
+        sx={{ mt: "2rem" }}
         maxWidth={false}
         className="background-light"
       >
