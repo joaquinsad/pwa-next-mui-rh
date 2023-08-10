@@ -36,7 +36,7 @@ const linksRight = [
 ];
 
 const Header = () => (
-  <Fragment>
+  <Box component={"header"}>
     <Box>
       <Box
         display={{
@@ -56,7 +56,7 @@ const Header = () => (
         <NavMobile linksLeft={linksLeft} linksRight={linksRight} />
       </Box>
     </Box>
-  </Fragment>
+  </Box>
 );
 
 export default Header;
