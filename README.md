@@ -1,10 +1,10 @@
 # PWA con NextJS y Materia UI
 
-Este template fue creado para aprender sobre tecnologías frontend. Posee un ejemplo y en este archivo se explicara el paso a paso de como fue su proceso de desarrollo.
+Este template fue creado para aprender sobre tecnologías frontend. Posee un ejemplo y en este archivo se explicara el paso a paso de como fue su proceso de desarrollo. Si te sirvió, considera dar una estrella para valorar el trabajo realizado
 
 ## Entorno
 
-Asegurarse de tener instalado `git` . Esto se puede revisar muy facílmente a trevés del comando `git --version` . En caso de no estar instalado, se puede hacer a través de los siguientes paso
+Asegurarse de tener instalado `git` . Esto se puede revisar muy fácilmente a trevés del comando `git --version` . En caso de no estar instalado, se puede hacer a través de los siguientes paso
 
 - En Linux, a través del comando `sudo apt install git`.
 - En Windows, a través de la pagina oficial https://git-scm.com/
@@ -111,7 +111,7 @@ La propia pagina nos otorga los links que debemos pegar en el `Layout/components
 
 ### Colores
 
-Con la marca ya elegida, proceda a elegir los colores que serán parte del estilo de la pagina. En la carpeta `src/theme/Theme.tsx` se encuentra el componente a cargo de customizar la paleta de colores, ademas de otras características del estilo. Recomiendo leer los siguientes artículos para saber más.
+Con la marca ya elegida, proceda a elegir los colores que serán parte del estilo de la pagina. En la carpeta `src/theme/Theme.tsx` se encuentra el componente a cargo de customizar la paleta de colores, además de otras características del estilo. Recomiendo leer los siguientes artículos para saber más.
 
 - https://mui.com/material-ui/customization/theming/
 - https://mui.com/material-ui/customization/color/
