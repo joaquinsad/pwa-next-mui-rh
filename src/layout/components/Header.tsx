@@ -16,7 +16,7 @@ const linksLeft = [
     icon: <Web />,
   },
   {
-    label: "Precios",
+    label: "Planes",
     href: "/planes",
     icon: <MonetizationOn />,
   },
