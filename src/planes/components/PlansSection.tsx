@@ -1,23 +1,9 @@
-import {
-  Box,
-  Button,
-  Card,
-  CardActions,
-  CardContent,
-  CardHeader,
-  Grid,
-  Stack,
-  Typography,
-} from "@mui/material";
+import { Box, Grid, Stack, Typography } from "@mui/material";
 import React from "react";
+import { Plan } from "../types/Plan";
+import CardPlanSection from "./CardPlanSection";
 
-export const plans: {
-  title: string;
-  description: string;
-  price: number;
-  hrefViewMore: string;
-  hrefSelectPlan: string;
-}[] = [
+export const plans: Plan[] = [
   {
     title: "Website",
     description: "Crea un catálogo profesional y atractivo que sorprenda.",
@@ -53,46 +39,7 @@ const PlansSection = () => {
         <Grid container spacing={4}>
           {plans.map((item, index) => (
             <Grid item key={index} xs={12} md={4}>
-              <Card
-                sx={{
-                  minHeight: "345px",
-                  display: "flex",
-                  flexDirection: "column",
-                  justifyContent: "space-between",
-                  p: 2,
-                }}
-                elevation={4}
-              >
-                <CardHeader title={item.title} subheader={item.description} />
-                <Box>
-                  <CardContent>
-                    <Typography variant="caption">Desde</Typography>
-                    <Typography variant="h4" className="title">
-                      {`AR$ ${item.price
-                        .toString()
-                        .replace(/\B(?=(\d{3})+(?!\d))/g, ".")},00`}
-                    </Typography>
-                    <Typography variant="caption">/mes</Typography>
-                  </CardContent>
-                  <CardActions></CardActions>
-                  <Stack direction={"row"} spacing={2}>
-                    <Button
-                      variant="contained"
-                      className="button contained"
-                      href={item.hrefSelectPlan}
-                    >
-                      Seleccionar
-                    </Button>
-                    <Button
-                      variant="text"
-                      className="button button-text"
-                      href={item.hrefViewMore}
-                    >
-                      Ver más
-                    </Button>
-                  </Stack>
-                </Box>
-              </Card>
+              <CardPlanSection item={item} />
             </Grid>
           ))}
         </Grid>
