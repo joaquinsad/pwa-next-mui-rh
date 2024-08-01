@@ -7,6 +7,6 @@ const withPWA = require("next-pwa")({
 module.exports = withPWA({
   // config
   images: {
-    domains: ["picsum.photos"],
+    domains: ["picsum.photos", "acdn.mitiendanube.com"],
   },
 });
