@@ -17,3 +17,6 @@ a {
 .content {
   text-align: center;
 }
+h4 {
+  direction: ltr;
+}
